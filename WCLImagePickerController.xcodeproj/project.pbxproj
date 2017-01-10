@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9717A1B71E2517C90075D33E /* WCLImagePickerController.h in Headers */ = {isa = PBXBuildFile; fileRef = 9717A1B51E2517C90075D33E /* WCLImagePickerController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9717A1C41E2518360075D33E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9717A1C31E2518360075D33E /* AppDelegate.swift */; };
 		9717A1C61E2518360075D33E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9717A1C51E2518360075D33E /* ViewController.swift */; };
 		9717A1C91E2518360075D33E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9717A1C71E2518360075D33E /* Main.storyboard */; };
@@ -53,7 +52,6 @@
 
 /* Begin PBXFileReference section */
 		9717A1B21E2517C90075D33E /* WCLImagePickerController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WCLImagePickerController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9717A1B51E2517C90075D33E /* WCLImagePickerController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WCLImagePickerController.h; sourceTree = "<group>"; };
 		9717A1B61E2517C90075D33E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9717A1C11E2518360075D33E /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9717A1C31E2518360075D33E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -140,7 +138,6 @@
 			isa = PBXGroup;
 			children = (
 				9717A2251E2519E40075D33E /* WCLImagePickerController */,
-				9717A1B51E2517C90075D33E /* WCLImagePickerController.h */,
 				9717A1B61E2517C90075D33E /* Info.plist */,
 			);
 			path = WCLImagePickerController;
@@ -256,7 +253,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9717A1B71E2517C90075D33E /* WCLImagePickerController.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -615,6 +611,7 @@
 				9717A1BC1E2517C90075D33E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9717A1D01E2518360075D33E /* Build configuration list for PBXNativeTarget "Demo" */ = {
 			isa = XCConfigurationList;
@@ -623,6 +620,7 @@
 				9717A1D21E2518360075D33E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
