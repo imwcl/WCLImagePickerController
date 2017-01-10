@@ -12,6 +12,12 @@
 
 # 使用
 
+首先因为权限问题需要加入照片权限和摄像头的权限：
+
+在项目的`info.plist`
+
+`NSPhotoLibraryUsageDescription`和`NSCameraUsageDescription`
+
 可以下载项目查看demo
 
 ```swift
