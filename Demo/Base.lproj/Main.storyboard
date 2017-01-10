@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="QZN-vT-ayf">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="sgY-2q-Mvg">
+            <objects>
+                <viewController id="QZN-vT-ayf" customClass="ViewController" customModule="Demo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1YQ-Bn-hLk"/>
+                        <viewControllerLayoutGuide type="bottom" id="NWK-zJ-0wL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="TiU-8I-yG6">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sfU-fb-CiT">
+                                <rect key="frame" x="156" y="362" width="62" height="30"/>
+                                <state key="normal" title="进入相册"/>
+                                <connections>
+                                    <action selector="buttonAction:" destination="QZN-vT-ayf" eventType="touchUpInside" id="4WD-3E-EkY"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="相册的列数：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1MT-qw-HJV">
+                                <rect key="frame" x="19" y="77" width="92" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Bg4-Jy-fGR">
+                                <rect key="frame" x="156" y="70" width="145" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="145" id="ung-5E-ENj"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="3"/>
+                                    <segment title="4"/>
+                                    <segment title="5"/>
+                                </segments>
+                                <connections>
+                                    <action selector="lineChange:" destination="QZN-vT-ayf" eventType="valueChanged" id="ufp-24-Ivk"/>
+                                </connections>
+                            </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="相册的主题颜色：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4vZ-wB-lfm">
+                                <rect key="frame" x="16" y="125" width="123" height="18"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="123" id="fvD-4W-Kxu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Wag-6g-LDw">
+                                <rect key="frame" x="156" y="116" width="145" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="145" id="Y16-TX-kis"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="默认"/>
+                                    <segment title="蓝色"/>
+                                    <segment title="黄色"/>
+                                </segments>
+                                <connections>
+                                    <action selector="tintColorChange:" destination="QZN-vT-ayf" eventType="valueChanged" id="F9T-OM-WJZ"/>
+                                </connections>
+                            </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="是否需要底部栏：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m9B-cQ-V7p">
+                                <rect key="frame" x="16" y="173" width="123" height="18"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="123" id="dei-aF-Qbf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="eJj-BX-cpd">
+                                <rect key="frame" x="156" y="162" width="145" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="145" id="3Hl-8b-OMV"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="是"/>
+                                    <segment title="否"/>
+                                </segments>
+                                <connections>
+                                    <action selector="hideBottom:" destination="QZN-vT-ayf" eventType="valueChanged" id="MuR-pM-BGO"/>
+                                </connections>
+                            </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="状态栏颜色：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eyE-OV-LUh">
+                                <rect key="frame" x="16" y="223" width="123" height="18"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="123" id="WT3-eS-85f"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="hzo-jm-dVV">
+                                <rect key="frame" x="158" y="213" width="145" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="145" id="TFz-TQ-FE5"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="白色"/>
+                                    <segment title="黑色"/>
+                                </segments>
+                                <connections>
+                                    <action selector="statsBarChange:" destination="QZN-vT-ayf" eventType="valueChanged" id="vER-hl-160"/>
+                                </connections>
+                            </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="图片的最多选择数：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ntL-ZI-qsW">
+                                <rect key="frame" x="16" y="268" width="138" height="18"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="138" id="1EH-3h-YU9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="G6B-H0-k0V">
+                                <rect key="frame" x="158" y="259" width="145" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="145" id="zl3-gY-O0S"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="3"/>
+                                    <segment title="4"/>
+                                    <segment title="5"/>
+                                </segments>
+                                <connections>
+                                    <action selector="maxSelectNum:" destination="QZN-vT-ayf" eventType="valueChanged" id="Ctv-Lu-Sro"/>
+                                </connections>
+                            </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="是否需要拍摄：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mWg-c3-7pn">
+                                <rect key="frame" x="16" y="317" width="132" height="18"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="132" id="iPu-iI-5H0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="1f4-8O-Mli">
+                                <rect key="frame" x="156" y="307" width="145" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="145" id="I7G-uN-Z6u"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="是"/>
+                                    <segment title="否"/>
+                                </segments>
+                                <connections>
+                                    <action selector="needCamare:" destination="QZN-vT-ayf" eventType="valueChanged" id="hoL-UM-bNX"/>
+                                </connections>
+                            </segmentedControl>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="G6B-H0-k0V" firstAttribute="top" secondItem="hzo-jm-dVV" secondAttribute="bottom" constant="18" id="17X-7c-M1o"/>
+                            <constraint firstItem="ntL-ZI-qsW" firstAttribute="leading" secondItem="TiU-8I-yG6" secondAttribute="leading" constant="16" id="1dP-8l-cfe"/>
+                            <constraint firstItem="G6B-H0-k0V" firstAttribute="leading" secondItem="ntL-ZI-qsW" secondAttribute="trailing" constant="4" id="2kl-AR-x7g"/>
+                            <constraint firstItem="1MT-qw-HJV" firstAttribute="top" secondItem="1YQ-Bn-hLk" secondAttribute="bottom" constant="57" id="4IS-RJ-Y7J"/>
+                            <constraint firstItem="Bg4-Jy-fGR" firstAttribute="leading" secondItem="1MT-qw-HJV" secondAttribute="trailing" constant="45" id="4qy-BO-fTg"/>
+                            <constraint firstItem="4vZ-wB-lfm" firstAttribute="leading" secondItem="TiU-8I-yG6" secondAttribute="leading" constant="16" id="5Ux-hS-krw"/>
+                            <constraint firstItem="ntL-ZI-qsW" firstAttribute="top" secondItem="eyE-OV-LUh" secondAttribute="bottom" constant="27" id="6kX-Gw-r3V"/>
+                            <constraint firstItem="Wag-6g-LDw" firstAttribute="leading" secondItem="4vZ-wB-lfm" secondAttribute="trailing" constant="17" id="7aF-rg-C79"/>
+                            <constraint firstItem="Bg4-Jy-fGR" firstAttribute="top" secondItem="1YQ-Bn-hLk" secondAttribute="bottom" constant="50" id="Bsp-Gc-ClM"/>
+                            <constraint firstItem="eyE-OV-LUh" firstAttribute="top" secondItem="m9B-cQ-V7p" secondAttribute="bottom" constant="32" id="Dca-WD-qFj"/>
+                            <constraint firstItem="m9B-cQ-V7p" firstAttribute="top" secondItem="4vZ-wB-lfm" secondAttribute="bottom" constant="30" id="EnR-7m-W95"/>
+                            <constraint firstItem="eyE-OV-LUh" firstAttribute="leading" secondItem="TiU-8I-yG6" secondAttribute="leading" constant="16" id="FDk-dw-vAh"/>
+                            <constraint firstItem="eJj-BX-cpd" firstAttribute="leading" secondItem="m9B-cQ-V7p" secondAttribute="trailing" constant="17" id="H9G-au-Nnq"/>
+                            <constraint firstItem="1f4-8O-Mli" firstAttribute="leading" secondItem="mWg-c3-7pn" secondAttribute="trailing" constant="8" id="I0r-Tk-9tT"/>
+                            <constraint firstItem="Wag-6g-LDw" firstAttribute="top" secondItem="Bg4-Jy-fGR" secondAttribute="bottom" constant="17.5" id="MpQ-OL-5g2"/>
+                            <constraint firstItem="m9B-cQ-V7p" firstAttribute="leading" secondItem="TiU-8I-yG6" secondAttribute="leading" constant="16" id="N9U-lC-Sqo"/>
+                            <constraint firstItem="sfU-fb-CiT" firstAttribute="centerX" secondItem="TiU-8I-yG6" secondAttribute="centerX" id="P94-O9-mHf"/>
+                            <constraint firstItem="mWg-c3-7pn" firstAttribute="top" secondItem="ntL-ZI-qsW" secondAttribute="bottom" constant="31" id="VIc-PP-0CH"/>
+                            <constraint firstItem="1f4-8O-Mli" firstAttribute="top" secondItem="G6B-H0-k0V" secondAttribute="bottom" constant="20" id="WeY-6G-5kl"/>
+                            <constraint firstItem="mWg-c3-7pn" firstAttribute="leading" secondItem="TiU-8I-yG6" secondAttribute="leading" constant="16" id="ZPJ-Cd-B2c"/>
+                            <constraint firstItem="eJj-BX-cpd" firstAttribute="top" secondItem="Wag-6g-LDw" secondAttribute="bottom" constant="18" id="hSM-Nu-m16"/>
+                            <constraint firstItem="4vZ-wB-lfm" firstAttribute="top" secondItem="1MT-qw-HJV" secondAttribute="bottom" constant="29.5" id="heO-Cg-mGI"/>
+                            <constraint firstItem="hzo-jm-dVV" firstAttribute="leading" secondItem="eyE-OV-LUh" secondAttribute="trailing" constant="19" id="iG3-My-s1s"/>
+                            <constraint firstItem="hzo-jm-dVV" firstAttribute="top" secondItem="eJj-BX-cpd" secondAttribute="bottom" constant="23" id="lhO-0d-JQt"/>
+                            <constraint firstItem="sfU-fb-CiT" firstAttribute="top" secondItem="G6B-H0-k0V" secondAttribute="bottom" constant="75" id="niV-zs-Iob"/>
+                            <constraint firstItem="1MT-qw-HJV" firstAttribute="leading" secondItem="TiU-8I-yG6" secondAttribute="leading" constant="19" id="qul-cN-rzf"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mTP-Dh-OOd" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="106.59670164917542"/>
+        </scene>
+    </scenes>
+</document>

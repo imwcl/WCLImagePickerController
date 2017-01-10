@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="WCLCameraCVCell" id="p6r-fi-1pm" customClass="WCLCameraCVCell" customModule="WclImagePickerController" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="104" height="104"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="104" height="104"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VRq-lX-hh8">
+                        <rect key="frame" x="0.0" y="0.0" width="104" height="104"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="HCw-8D-ezw">
+                        <rect key="frame" x="32" y="32" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" priority="250" constant="40" id="HOU-Tw-Z4D"/>
+                            <constraint firstAttribute="width" priority="250" constant="40" id="hQV-wf-TIF"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="VRq-lX-hh8" secondAttribute="bottom" id="8mx-Mz-KNN"/>
+                <constraint firstItem="VRq-lX-hh8" firstAttribute="top" secondItem="p6r-fi-1pm" secondAttribute="top" id="Da0-TI-bGf"/>
+                <constraint firstItem="HCw-8D-ezw" firstAttribute="centerX" secondItem="p6r-fi-1pm" secondAttribute="centerX" id="bkT-P9-C6m"/>
+                <constraint firstItem="HCw-8D-ezw" firstAttribute="centerY" secondItem="p6r-fi-1pm" secondAttribute="centerY" id="uIg-af-TsI"/>
+                <constraint firstItem="VRq-lX-hh8" firstAttribute="leading" secondItem="p6r-fi-1pm" secondAttribute="leading" id="wVK-gw-Dm5"/>
+                <constraint firstAttribute="trailing" secondItem="VRq-lX-hh8" secondAttribute="trailing" id="wcT-6H-y1a"/>
+            </constraints>
+            <size key="customSize" width="104" height="104"/>
+            <connections>
+                <outlet property="imageCameraView" destination="HCw-8D-ezw" id="Bwa-R2-KnM"/>
+            </connections>
+        </collectionViewCell>
+    </objects>
+</document>
