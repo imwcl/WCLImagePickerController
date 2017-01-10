@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "WCLImagePickerController"
-  s.version      = "0.0.1"
+  s.version      = "1.0.0"
   s.summary      = "WCLImagePickerController可自定义的图片选择器。"
 
   # This description is used to generate tags and improve search results.
@@ -25,6 +25,7 @@ Pod::Spec.new do |s|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   s.description  = <<-DESC
+                   由swift实现可自定义的图片选择器。
                    DESC
 
   s.homepage     = "https://github.com/631106979/WCLImagePickerController"
@@ -64,7 +65,7 @@ Pod::Spec.new do |s|
   #
 
   # s.platform     = :ios
-  # s.platform     = :ios, "5.0"
+  s.platform     = :ios, "8.0"
 
   #  When using multiple platforms
   # s.ios.deployment_target = "5.0"
