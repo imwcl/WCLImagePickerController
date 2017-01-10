@@ -2,13 +2,47 @@
 
 ![](https://img.shields.io/badge/Swift-3.0-blue.svg?style=flat)
 
+[![Platform](https://img.shields.io/cocoapods/p/NextGrowingTextView.svg?style=flat)](http://cocoapods.org/pods/NextGrowingTextView)
+
+[![Version](https://img.shields.io/cocoapods/v/NextGrowingTextView.svg?style=flat)](http://cocoapods.org/pods/NextGrowingTextView)
+
+[![CI Status](http://img.shields.io/travis/muukii/NextGrowingTextView.svg?style=flat)](https://travis-ci.org/muukii/NextGrowingTextView)
+
 `WCLImagePickerController`是一个可以简单自定义的图片选择器
 
-![wcl.gif](http://imwcl.oss-cn-shanghai.aliyuncs.com/github/WclImagePickerController/wcl.gif)
+![wcl.gif](wcl.gif)
 
 # Demo
 
 可以通过[Appetize.io](https://appetize.io/app/hue1a1gmunhh46dtcxuj8ycfd4?device=iphone5s&scale=75&orientation=portrait&osVersion=9.3)允许我的Demo，非常方便~
+
+# 安装
+
+必须iOS 8.0+ Swift3
+
+## CocoaPods
+
+如果没有安装你可以用下面的命令安装[CocoaPods](http://cocoapods.org)：
+
+```shell
+$ gem install cocoapods
+```
+
+使用CocoaPods将`WCLImagePickerController`添加到您的`Xcode`项目，在`Podfile`中添加一下代码：
+
+```ruby
+source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '8.0'
+use_frameworks!
+
+pod 'NextGrowingTextView'
+```
+
+然后，运行以下命令：
+
+```shell
+$ pod install
+```
 
 # 使用
 
