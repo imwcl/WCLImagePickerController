@@ -35,7 +35,7 @@ public protocol WCLImagePikcerDelegate: class {
 }
 
 extension WCLImagePikcerDelegate {
-    func wclImagePickerCancel(_ picker: WCLImagePickerController) -> Void {}
-    func wclImagePickerComplete(_ picker: WCLImagePickerController, imageArr: [UIImage]) -> Void {}
-    func wclImagePickerError(_ picker: WCLImagePickerController, error: WCLError) -> Void {}
+    public func wclImagePickerCancel(_ picker: WCLImagePickerController) -> Void {}
+    public func wclImagePickerComplete(_ picker: WCLImagePickerController, imageArr: [UIImage]) -> Void {}
+    public func wclImagePickerError(_ picker: WCLImagePickerController, error: WCLError) -> Void {}
 }

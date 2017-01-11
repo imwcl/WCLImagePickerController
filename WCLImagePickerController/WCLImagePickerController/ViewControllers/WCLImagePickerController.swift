@@ -116,7 +116,7 @@ public class WCLImagePickerController: UIViewController {
     
     
     //MARK: Initial Methods
-    init(delegate: WCLImagePikcerDelegate) {
+    public init(delegate: WCLImagePikcerDelegate) {
         super.init(nibName: "WCLImagePickerController", bundle: WCLImagePickerBundle.bundle)
         self.delegate = delegate
     }
