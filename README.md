@@ -13,7 +13,7 @@
 
 # Demo
 
-可以通过[Appetize.io](https://appetize.io/app/hue1a1gmunhh46dtcxuj8ycfd4?device=iphone5s&scale=75&orientation=portrait&osVersion=9.3)允许我的Demo，非常方便~
+可以通过[Appetize.io](https://appetize.io/app/hue1a1gmunhh46dtcxuj8ycfd4?device=iphone5s&scale=75&orientation=portrait&osVersion=9.3)运行我的Demo，非常方便~
 
 # 安装
 
