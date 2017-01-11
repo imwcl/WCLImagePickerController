@@ -15,6 +15,13 @@
 
 可以通过[Appetize.io](https://appetize.io/app/hue1a1gmunhh46dtcxuj8ycfd4?device=iphone5s&scale=75&orientation=portrait&osVersion=9.3)运行我的Demo，非常方便~
 
+# **Features**
+
+- [x] 支持多选图片
+- [x] 支持图片预览
+- [x] 可以高度自定义界面，包括颜色和其他功能
+- [x] 支持拍照功能
+
 # 安装
 
 必须iOS 8.0+ Swift3
