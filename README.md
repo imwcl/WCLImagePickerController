@@ -1,9 +1,11 @@
+
+
 # WCLImagePickerController
 
 ![](https://img.shields.io/badge/Swift-3.0-blue.svg?style=flat)
-[![License](https://img.shields.io/cocoapods/l/WCLImagePickerController.svg?style=flat)](http://cocoapods.org/pods/WCLImagePickerController)
-[![Platform](https://img.shields.io/cocoapods/p/WCLImagePickerController.svg?style=flat)](http://cocoapods.org/pods/WCLImagePickerController)
 [![Version](https://img.shields.io/cocoapods/v/WCLImagePickerController.svg?style=flat)](http://cocoapods.org/pods/WCLImagePickerController)
+[![Platform](https://img.shields.io/cocoapods/p/WCLImagePickerController.svg?style=flat)](http://cocoapods.org/pods/WCLImagePickerController)
+[![License](https://img.shields.io/cocoapods/l/WCLImagePickerController.svg?style=flat)](http://cocoapods.org/pods/WCLImagePickerController)
 
 `WCLImagePickerController`是一个可以简单自定义的图片选择器
 
