@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
 
   s.name          = "WCLImagePickerController"
-  s.version       = "1.0.1"
+  s.version       = "1.0.2"
   s.summary       = "由swift实现可自定义的图片选择器。"
 
   s.homepage      = "https://github.com/631106979/WCLImagePickerController"
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
   s.platform      = :ios, "8.0"
   s.source        = { :git => "https://github.com/631106979/WCLImagePickerController.git", :tag => "1.0.1" }
   s.source_files  = 'WCLImagePickerController/**/*.swift'
-  s.exclude_files = 'WCLImagePickerController/**/*.{png,xib,storyboard}'
+  s.resources    = 'WCLImagePickerController/WCLImagePickerController/WCLImagePickerController.bundle'
   s.frameworks = "UIKit", "Photos"
   s.requires_arc  = true
 
