@@ -2,12 +2,6 @@
 
 ![](https://img.shields.io/badge/Swift-3.0-blue.svg?style=flat)
 
-[![Platform](https://img.shields.io/cocoapods/p/NextGrowingTextView.svg?style=flat)](http://cocoapods.org/pods/NextGrowingTextView)
-
-[![Version](https://img.shields.io/cocoapods/v/NextGrowingTextView.svg?style=flat)](http://cocoapods.org/pods/NextGrowingTextView)
-
-[![CI Status](http://img.shields.io/travis/muukii/NextGrowingTextView.svg?style=flat)](https://travis-ci.org/muukii/NextGrowingTextView)
-
 `WCLImagePickerController`是一个可以简单自定义的图片选择器
 
 ![wcl.gif](wcl.gif)
