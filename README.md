@@ -29,7 +29,7 @@ source 'https://github.com/CocoaPods/Specs.git'
 platform :ios, '8.0'
 use_frameworks!
 
-pod 'NextGrowingTextView'
+pod 'WCLImagePickerController'
 ```
 
 然后，运行以下命令：
@@ -46,7 +46,7 @@ $ pod install
 
 `NSPhotoLibraryUsageDescription`和`NSCameraUsageDescription`
 
-可以下载项目查看demo
+可以下载项目查看demo：
 
 ```swift
 // 推出WCLImagePickerController

@@ -39,7 +39,7 @@ Pod::Spec.new do |s|
   #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
   #
 
-  s.license      = "MIT"
+  s.license      = "{ :type => "MIT", :file => "LICENSE" }"
   # s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
 
 
@@ -117,7 +117,7 @@ Pod::Spec.new do |s|
   #
 
   # s.framework  = "SomeFramework"
-  # s.frameworks = "SomeFramework", "AnotherFramework"
+  s.frameworks = "UIKit", "Photos"
 
   # s.library   = "iconv"
   # s.libraries = "iconv", "xml2"
