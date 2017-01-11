@@ -98,7 +98,7 @@ public class WCLPickerManager: NSObject {
     /**
      通过下标返回相册的PHFetchResult
      
-     - parameter index: 选择的index
+     - parameter index: 选择相册的index
      
      - returns: 相册的PHFetchResult
      */

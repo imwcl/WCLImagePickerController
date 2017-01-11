@@ -131,3 +131,7 @@ public struct WCLImagePickerOptions {
 }
 ```
 
+# blog
+
+[photos框架的相关介绍](http://blog.csdn.net/wang631106979/article/details/54343860)
+
