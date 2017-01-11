@@ -255,20 +255,26 @@ public class WCLImagePickerController: UIViewController {
     fileprivate func cameraAuthorization() -> Bool {
         let mediaType = AVMediaTypeVideo
         let authorizationStatus = AVCaptureDevice.authorizationStatus(forMediaType: mediaType)
-        if TARGET_OS_SIMULATOR != 0 {
+        /// 是否在模拟器
+        #if (arch(i386) || arch(x86_64)) && os(iOS)
             NotificationCenter.default.post(name: WCLImagePickerNotify.imagePickerError, object: WCLError.noCameraPermissions)
             return false
-        }
-        if authorizationStatus == .restricted || authorizationStatus == .denied {
-            NotificationCenter.default.post(name: WCLImagePickerNotify.imagePickerError, object: WCLError.noCameraPermissions)
-            AVCaptureDevice.requestAccess(forMediaType: mediaType, completionHandler: { (flag) in
-                if flag {
-                    self.imageCamereShow()
-                }
-            })
-            return false
-        }
-        return true
+        #else
+            if authorizationStatus == .restricted || authorizationStatus == .denied {
+                NotificationCenter.default.post(name: WCLImagePickerNotify.imagePickerError, object: WCLError.noCameraPermissions)
+                AVCaptureDevice.requestAccess(forMediaType: mediaType, completionHandler: { (flag) in
+                    if flag {
+                        self.imageCamereShow()
+                    }
+                })
+                return false
+            }
+            return true
+        #endif
+//        if TARGET_OS_SIMULATOR != 0 {
+//            NotificationCenter.default.post(name: WCLImagePickerNotify.imagePickerError, object: WCLError.noCameraPermissions)
+//            return false
+//        }
     }
     
     //MARK: Notification Methods

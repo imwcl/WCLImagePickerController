@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
 
   s.name         = "WCLImagePickerController"
   s.version      = "1.0.0"
-  s.summary      = "WCLImagePickerController可自定义的图片选择器。"
+  s.summary      = "可自定义的图片选择器。"
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
@@ -80,7 +80,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/631106979/WCLImagePickerController" }
+  s.source       = { :git => "https://github.com/631106979/WCLImagePickerController.git", :tag => "1.0.0" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #

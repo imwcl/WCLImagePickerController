@@ -13,7 +13,6 @@
 		9717A1CB1E2518360075D33E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9717A1CA1E2518360075D33E /* Assets.xcassets */; };
 		9717A1CE1E2518360075D33E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9717A1CC1E2518360075D33E /* LaunchScreen.storyboard */; };
 		9717A1D41E25184F0075D33E /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9717A1D31E25184F0075D33E /* Launch Screen.storyboard */; };
-		9717A1D51E2518BE0075D33E /* WCLImagePickerController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9717A1B21E2517C90075D33E /* WCLImagePickerController.framework */; };
 		9717A24E1E2519E40075D33E /* WCLPhotoCellContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9717A2281E2519E40075D33E /* WCLPhotoCellContext.swift */; };
 		9717A24F1E2519E40075D33E /* WCLPhotoCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9717A2291E2519E40075D33E /* WCLPhotoCVCell.swift */; };
 		9717A2501E2519E40075D33E /* WCLPhotoCVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9717A22A1E2519E40075D33E /* WCLPhotoCVCell.xib */; };
@@ -48,7 +47,35 @@
 		9717A26D1E2519E40075D33E /* WCLSelectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9717A24B1E2519E40075D33E /* WCLSelectView.swift */; };
 		9717A26E1E2519E40075D33E /* WCLSelectView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9717A24C1E2519E40075D33E /* WCLSelectView.xib */; };
 		9717A26F1E2519E40075D33E /* WCLImagePickerController.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 9717A24D1E2519E40075D33E /* WCLImagePickerController.bundle */; };
+		9717A2721E25BE830075D33E /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9717A2711E25BE830075D33E /* Photos.framework */; };
+		9717A2741E25BE8A0075D33E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9717A2731E25BE8A0075D33E /* UIKit.framework */; };
+		9717A27A1E25D7050075D33E /* WCLImagePickerController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9717A1B21E2517C90075D33E /* WCLImagePickerController.framework */; };
+		9717A27B1E25D7050075D33E /* WCLImagePickerController.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9717A1B21E2517C90075D33E /* WCLImagePickerController.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9717A27C1E25D7050075D33E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9717A1A91E2517C90075D33E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9717A1B11E2517C90075D33E;
+			remoteInfo = WCLImagePickerController;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9717A27E1E25D7050075D33E /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				9717A27B1E25D7050075D33E /* WCLImagePickerController.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		9717A1B21E2517C90075D33E /* WCLImagePickerController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WCLImagePickerController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -95,6 +122,8 @@
 		9717A24B1E2519E40075D33E /* WCLSelectView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WCLSelectView.swift; sourceTree = "<group>"; };
 		9717A24C1E2519E40075D33E /* WCLSelectView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WCLSelectView.xib; sourceTree = "<group>"; };
 		9717A24D1E2519E40075D33E /* WCLImagePickerController.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = WCLImagePickerController.bundle; sourceTree = "<group>"; };
+		9717A2711E25BE830075D33E /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
+		9717A2731E25BE8A0075D33E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +131,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9717A2741E25BE8A0075D33E /* UIKit.framework in Frameworks */,
+				9717A2721E25BE830075D33E /* Photos.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -109,7 +140,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9717A1D51E2518BE0075D33E /* WCLImagePickerController.framework in Frameworks */,
+				9717A27A1E25D7050075D33E /* WCLImagePickerController.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -122,6 +153,7 @@
 				9717A1B41E2517C90075D33E /* WCLImagePickerController */,
 				9717A1C21E2518360075D33E /* Demo */,
 				9717A1B31E2517C90075D33E /* Products */,
+				9717A2701E25BE830075D33E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -246,6 +278,15 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		9717A2701E25BE830075D33E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9717A2731E25BE8A0075D33E /* UIKit.framework */,
+				9717A2711E25BE830075D33E /* Photos.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -284,10 +325,12 @@
 				9717A1BD1E2518360075D33E /* Sources */,
 				9717A1BE1E2518360075D33E /* Frameworks */,
 				9717A1BF1E2518360075D33E /* Resources */,
+				9717A27E1E25D7050075D33E /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				9717A27D1E25D7050075D33E /* PBXTargetDependency */,
 			);
 			name = Demo;
 			productName = Demo;
@@ -408,6 +451,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9717A27D1E25D7050075D33E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9717A1B11E2517C90075D33E /* WCLImagePickerController */;
+			targetProxy = 9717A27C1E25D7050075D33E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		9717A1C71E2518360075D33E /* Main.storyboard */ = {
@@ -569,6 +620,7 @@
 		9717A1D11E2518360075D33E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 464B6RYLBK;
 				INFOPLIST_FILE = Demo/Info.plist;
@@ -582,6 +634,7 @@
 		9717A1D21E2518360075D33E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 464B6RYLBK;
 				INFOPLIST_FILE = Demo/Info.plist;
