@@ -47,7 +47,7 @@ $ pod install
 
 首先因为权限问题需要加入照片权限和摄像头的权限：
 
-在项目的`info.plist`
+在项目的`info.plist`添加一下字段
 
 `NSPhotoLibraryUsageDescription`和`NSCameraUsageDescription`
 
