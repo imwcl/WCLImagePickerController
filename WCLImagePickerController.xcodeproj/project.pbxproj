@@ -11,7 +11,6 @@
 		9717A1C61E2518360075D33E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9717A1C51E2518360075D33E /* ViewController.swift */; };
 		9717A1C91E2518360075D33E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9717A1C71E2518360075D33E /* Main.storyboard */; };
 		9717A1CB1E2518360075D33E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9717A1CA1E2518360075D33E /* Assets.xcassets */; };
-		9717A1CE1E2518360075D33E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9717A1CC1E2518360075D33E /* LaunchScreen.storyboard */; };
 		9717A1D41E25184F0075D33E /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9717A1D31E25184F0075D33E /* Launch Screen.storyboard */; };
 		9717A24E1E2519E40075D33E /* WCLPhotoCellContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9717A2281E2519E40075D33E /* WCLPhotoCellContext.swift */; };
 		9717A24F1E2519E40075D33E /* WCLPhotoCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9717A2291E2519E40075D33E /* WCLPhotoCVCell.swift */; };
@@ -85,7 +84,6 @@
 		9717A1C51E2518360075D33E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9717A1C81E2518360075D33E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9717A1CA1E2518360075D33E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		9717A1CD1E2518360075D33E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9717A1CF1E2518360075D33E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9717A1D31E25184F0075D33E /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		9717A2281E2519E40075D33E /* WCLPhotoCellContext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WCLPhotoCellContext.swift; sourceTree = "<group>"; };
@@ -182,7 +180,6 @@
 				9717A1C51E2518360075D33E /* ViewController.swift */,
 				9717A1C71E2518360075D33E /* Main.storyboard */,
 				9717A1CA1E2518360075D33E /* Assets.xcassets */,
-				9717A1CC1E2518360075D33E /* LaunchScreen.storyboard */,
 				9717A1CF1E2518360075D33E /* Info.plist */,
 				9717A1D31E25184F0075D33E /* Launch Screen.storyboard */,
 			);
@@ -401,7 +398,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9717A1CE1E2518360075D33E /* LaunchScreen.storyboard in Resources */,
 				9717A1CB1E2518360075D33E /* Assets.xcassets in Resources */,
 				9717A1D41E25184F0075D33E /* Launch Screen.storyboard in Resources */,
 				9717A1C91E2518360075D33E /* Main.storyboard in Resources */,
@@ -467,14 +463,6 @@
 				9717A1C81E2518360075D33E /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		9717A1CC1E2518360075D33E /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9717A1CD1E2518360075D33E /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
