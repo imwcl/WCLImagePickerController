@@ -59,10 +59,10 @@ class WCLPhotoCellContext: NSObject {
                     cell.imageHeight.constant = cell.photoSrcollView.bounds.height
                     cell.imageWidth.constant  = cell.imageHeight.constant*scale
                     let interval = cell.photoSrcollView.bounds.width - cell.imageWidth.constant
-//                    cell.imageRight.constant  = interval/2
-//                    cell.imageLeft.constant   = interval/2
-//                    cell.imageTop.constant    = 0
-//                    cell.imageBottom.constant = 0
+                    cell.imageRight.constant  = interval/2
+                    cell.imageLeft.constant   = interval/2
+                    cell.imageTop.constant    = 0
+                    cell.imageBottom.constant = 0
                 }
             }
             cell.photoImageView.image = image
