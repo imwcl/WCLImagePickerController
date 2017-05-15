@@ -39,7 +39,7 @@ internal class WCLAblumCenterView: UIView {
     var isSelect = false {
         didSet {
             UIView.animate(withDuration: 0.3, animations: {
-                self.arrowImageView.layer.transform = CATransform3DRotate(self.arrowImageView.layer.transform,  CGFloat(M_PI), 1.0, 0.0, 0.0)
+                self.arrowImageView.layer.transform = CATransform3DRotate(self.arrowImageView.layer.transform,  CGFloat(Double.pi), 1.0, 0.0, 0.0)
             }) 
             selectBlockAction()
         }

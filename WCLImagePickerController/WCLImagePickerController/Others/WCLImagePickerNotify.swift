@@ -41,6 +41,9 @@ internal struct WCLImagePickerNotify {
     
     // imagePicker的error通知
     static let imagePickerError = Notification.Name("WCLImagePickerErrorNotify")
+    
+    // selectPicker的zoom通知
+    static let selectPickerZoom = Notification.Name("WCLSelectPickerZoom")
 }
 
 

@@ -194,7 +194,6 @@ public class WCLImagePickerController: UIViewController {
         cellContext?.register(collectionView: photoAblumCV)
         addSelectView()
         addCenterView()
-        addSelectView()
         addAblumList()
         photoAblumCV.reloadData()
     }

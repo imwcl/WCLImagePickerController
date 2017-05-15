@@ -185,6 +185,9 @@ extension WCLPhotoBrowserController:  UICollectionViewDelegate,
         let floatIndex:CGFloat = scrollView.contentOffset.x/scrollView.frame.width
         let intIndex:Int = Int(scrollView.contentOffset.x/scrollView.frame.width)
         if CGFloat(intIndex) == floatIndex {
+            if intIndex != currentIndex {
+                NotificationCenter.default.post(name: WCLImagePickerNotify.selectPickerZoom, object: nil)
+            }
             countSelectIndex(intIndex)
             currentIndex = intIndex
         }

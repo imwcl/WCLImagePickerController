@@ -44,6 +44,27 @@ class WCLPhotoCellContext: NSObject {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: WCLPhotoCVCell.identfier, for: indexPath) as! WCLPhotoCVCell
         let size = CGSize(width: collectionView.frame.width, height: collectionView.frame.height)
         pickerManager.getPhoto(size, alasset: asset) { (image, info) in
+            if let image = image {
+                let size = image.size
+                let scale = CGFloat(size.width/size.height)
+                if scale > 1 {
+                    cell.imageWidth.constant  = cell.photoSrcollView.bounds.width
+                    cell.imageHeight.constant = cell.imageWidth.constant/scale
+                    let interval = cell.photoSrcollView.bounds.height - cell.imageHeight.constant
+                    cell.imageBottom.constant = interval/2
+                    cell.imageTop.constant    = interval/2
+                    cell.imageRight.constant  = 0
+                    cell.imageLeft.constant   = 0
+                }else {
+                    cell.imageHeight.constant = cell.photoSrcollView.bounds.height
+                    cell.imageWidth.constant  = cell.imageHeight.constant*scale
+                    let interval = cell.photoSrcollView.bounds.width - cell.imageWidth.constant
+//                    cell.imageRight.constant  = interval/2
+//                    cell.imageLeft.constant   = interval/2
+//                    cell.imageTop.constant    = 0
+//                    cell.imageBottom.constant = 0
+                }
+            }
             cell.photoImageView.image = image
         }
         return cell

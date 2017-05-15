@@ -45,7 +45,7 @@ class WCLPickerCVCell: UICollectionViewCell,
         }else {
             WCLImagePickerOptions.tintColor.setFill()
         }
-        context?.addArc(center: CGPoint.init(x: size.width / 2, y: size.height / 2), radius: size.width / 2, startAngle: 0, endAngle: CGFloat(M_PI * 2), clockwise: true)
+        context?.addArc(center: CGPoint.init(x: size.width / 2, y: size.height / 2), radius: size.width / 2, startAngle: 0, endAngle: CGFloat(Double.pi * 2), clockwise: true)
         context?.fillPath()
         let selectImage = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()

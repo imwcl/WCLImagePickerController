@@ -1,36 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="WCLPhotoCVCell" id="d8Y-mZ-eNk" customClass="WCLPhotoCVCell" customModule="WclImagePickerController" customModuleProvider="target">
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="WCLPhotoCVCell" id="d8Y-mZ-eNk" customClass="WCLPhotoCVCell" customModule="WCLImagePickerController" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="395" height="603"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                 <rect key="frame" x="0.0" y="0.0" width="395" height="603"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" maximumZoomScale="1.5" translatesAutoresizingMaskIntoConstraints="NO" id="NGS-nD-R8w">
+                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" maximumZoomScale="3" translatesAutoresizingMaskIntoConstraints="NO" id="NGS-nD-R8w">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Jpa-H6-aXh">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="375" id="7i6-jd-m3P"/>
+                                    <constraint firstAttribute="height" constant="603" id="NLJ-ZO-6cP"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="Jpa-H6-aXh" secondAttribute="trailing" id="HUM-Ad-2k9"/>
-                            <constraint firstItem="Jpa-H6-aXh" firstAttribute="width" secondItem="NGS-nD-R8w" secondAttribute="width" id="U8E-ey-NcM"/>
                             <constraint firstItem="Jpa-H6-aXh" firstAttribute="leading" secondItem="NGS-nD-R8w" secondAttribute="leading" id="ZW1-V6-YcS"/>
                             <constraint firstItem="Jpa-H6-aXh" firstAttribute="top" secondItem="NGS-nD-R8w" secondAttribute="top" id="cUg-nd-NLQ"/>
-                            <constraint firstItem="Jpa-H6-aXh" firstAttribute="height" secondItem="NGS-nD-R8w" secondAttribute="height" id="fMu-xk-uGE"/>
                             <constraint firstAttribute="bottom" secondItem="Jpa-H6-aXh" secondAttribute="bottom" id="ucc-3Y-l9d"/>
                         </constraints>
                         <connections>
@@ -47,6 +49,12 @@
                 <constraint firstItem="NGS-nD-R8w" firstAttribute="leading" secondItem="d8Y-mZ-eNk" secondAttribute="leading" id="kFc-WQ-WyH"/>
             </constraints>
             <connections>
+                <outlet property="imageBottom" destination="ucc-3Y-l9d" id="DNJ-gB-YeW"/>
+                <outlet property="imageHeight" destination="NLJ-ZO-6cP" id="cxW-aJ-Pry"/>
+                <outlet property="imageLeft" destination="ZW1-V6-YcS" id="2ht-gX-ayD"/>
+                <outlet property="imageRight" destination="HUM-Ad-2k9" id="gjt-9m-af7"/>
+                <outlet property="imageTop" destination="cUg-nd-NLQ" id="6T5-jj-4f9"/>
+                <outlet property="imageWidth" destination="7i6-jd-m3P" id="Osb-yu-Ytt"/>
                 <outlet property="photoImageView" destination="Jpa-H6-aXh" id="yzp-xi-BYN"/>
                 <outlet property="photoSrcollView" destination="NGS-nD-R8w" id="2ew-QX-bAT"/>
             </connections>

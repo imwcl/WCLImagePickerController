@@ -64,7 +64,7 @@ internal class WCLPhotoSelectView: UIView,
         }else {
             WCLImagePickerOptions.tintColor.setFill()
         }
-        context?.addArc(center: CGPoint.init(x: size.width / 2, y: size.height / 2), radius: size.width / 2, startAngle: 0, endAngle: CGFloat(M_PI * 2), clockwise: true)
+        context?.addArc(center: CGPoint.init(x: size.width / 2, y: size.height / 2), radius: size.width / 2, startAngle: 0, endAngle: CGFloat(Double.pi * 2), clockwise: true)
         context?.fillPath()
         let selectImage = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
@@ -77,15 +77,10 @@ internal class WCLPhotoSelectView: UIView,
     }
     
     //MARK: Initial Methods
-    class func `init`(pickerManager: WCLPickerManager) -> WCLPhotoSelectView {
-        let view = UINib.init(nibName: "WCLPhotoSelectView", bundle: WCLImagePickerBundle.bundle).instantiate(withOwner: nil, options: nil).first as! WCLPhotoSelectView
-        view.pickerManager = pickerManager
-        return view
-    }
-    
     class func `init`(frame: CGRect, pickerManager: WCLPickerManager) -> WCLPhotoSelectView {
-        let view = WCLPhotoSelectView.init(pickerManager: pickerManager)
-        view.frame = frame
+        let view = UINib.init(nibName: "WCLPhotoSelectView", bundle: WCLImagePickerBundle.bundle).instantiate(withOwner: nil, options: nil).first as! WCLPhotoSelectView
+        view.frame         = frame
+        view.pickerManager = pickerManager
         return view
     }
     
