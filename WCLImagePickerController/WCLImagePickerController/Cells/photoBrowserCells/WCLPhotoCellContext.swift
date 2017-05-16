@@ -47,7 +47,8 @@ class WCLPhotoCellContext: NSObject {
             if let image = image {
                 let size = image.size
                 let scale = CGFloat(size.width/size.height)
-                if scale > 1 {
+                let deviceScale = cell.photoSrcollView.bounds.width/cell.photoSrcollView.bounds.height
+                if scale >= deviceScale {
                     cell.imageWidth.constant  = cell.photoSrcollView.bounds.width
                     cell.imageHeight.constant = cell.imageWidth.constant/scale
                     let interval = cell.photoSrcollView.bounds.height - cell.imageHeight.constant
